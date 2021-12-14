@@ -13,8 +13,7 @@ func isPalindrome(_ x: Int) -> Bool {
         count += 1
         num.append(i)
     }
-    for index in 0..<count {
-        print(num[index] , num[count-1-index])
+    for index in 0..<count/2 {
         if !(num[index] == num[count-1-index]) { return false }
     }
     
